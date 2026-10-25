@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(242, 235, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+
+    
+}
+
+.card{
+    width: 90%;
+    max-width: 375px;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 25px 30px ;
+    gap: 2px;
+}
+
+.content :nth-child(1){
+    color:hsl(228, 12%, 48%);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.content h2{
+    color:rgb(43, 30, 28);
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin: 5px 0;
+
+}
+
+.content :nth-child(3){
+    color:hsl(228, 12%, 48%);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 85%;
+}
+
+.price{
+    display: flex;
+    align-items: top;
+}
+
+.price .current{
+    color:rgb(27, 65, 51);
+    font-family: "Fraunces", serif;
+    font-size: 30px;
+    font-weight: 500;
+
+}
+
+.price .old{
+    color:rgb(108, 114, 137);
+    font-size: 15px;
+    text-decoration: line-through;
+    padding-left: 20px;
+}
+
+button{
+    background-color: rgb(60, 128, 103);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    color:white;
+    word-spacing: 1.5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(27, 65, 51);
+}
+
+button:active{
+    i{
+        transform: scale(1.2);
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+}
+
+@media (min-width:1440px){
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 700px;
+        margin:auto;
+        
+    }
+
+    .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .content{
+       justify-content: center;
+       padding: 30px;
+    }
+    
+}   
